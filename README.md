@@ -5,13 +5,13 @@ FastAPI application integrated with LangChain for building AI agents.
 ## Project Structure
 
 ```
-agent-api/
 ├── app/
 │   ├── api/           # API routes
 │   ├── agents/        # LangChain agent logic
 │   ├── core/          # Configuration
 │   ├── schemas/       # Pydantic models
 │   └── main.py        # FastAPI app
+├── docs/
 ├── tests/
 ├── pyproject.toml
 └── .env.example
@@ -21,7 +21,6 @@ agent-api/
 
 1. Install dependencies:
 ```bash
-cd agent-api
 pip install -e .
 ```
 
@@ -39,8 +38,8 @@ uvicorn app.main:app --reload
 ## API Endpoints
 
 - `GET /health` - Health check
-- `POST /agent/chat` - Send message to agent
-- `POST /agent/chat/stream` - Stream agent response
+- `POST /agent/chat` - Send message to agent, returns JSON response
+- `POST /agent/chat/sse` - Stream agent response via SSE
 
 ## Usage Example
 
@@ -62,3 +61,7 @@ The agent comes with built-in tools:
 - `get_current_weather` - Get weather for a location
 - `search_web` - Search the web
 - `calculate` - Evaluate math expressions
+
+## License
+
+[Apache License 2.0](LICENSE)
