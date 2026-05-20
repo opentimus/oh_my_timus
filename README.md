@@ -19,6 +19,8 @@ FastAPI application integrated with LangChain for building AI agents.
 
 ## Setup
 
+### Local Development
+
 1. Install dependencies:
 ```bash
 pip install -e .
@@ -33,6 +35,23 @@ cp .env.example .env
 3. Run the server:
 ```bash
 uvicorn app.main:app --reload
+```
+
+### Docker Deployment
+
+1. Build and run with Docker Compose:
+```bash
+# Set your API key
+export SILICONFLOW_API_KEY=your-api-key
+
+# Build and run
+docker-compose up -d
+```
+
+2. Or build manually:
+```bash
+docker build -t agent-api .
+docker run -p 8000:8000 -e SILICONFLOW_API_KEY=your-api-key agent-api
 ```
 
 ## API Endpoints
