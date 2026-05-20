@@ -16,7 +16,8 @@
       "Bash(git remote *)",
       "Bash(git pull *)",
       "Bash(git stash *)",
-      "Bash(mv /Users/wanbarry/3dchat/agent-api/* /Users/wanbarry/3dchat/ && mv /Users/wanbarry/3dchat/agent-api/.env.example /Users/wanbarry/3dchat/ && mv /Users/wanbarry/3dchat/agent-api/.gitignore /Users/wanbarry/3dchat/ && rmdir /Users/wanbarry/3dchat/agent-api)"
+      "Bash(mv /Users/wanbarry/3dchat/agent-api/* /Users/wanbarry/3dchat/ && mv /Users/wanbarry/3dchat/agent-api/.env.example /Users/wanbarry/3dchat/ && mv /Users/wanbarry/3dchat/agent-api/.gitignore /Users/wanbarry/3dchat/ && rmdir /Users/wanbarry/3dchat/agent-api)",
+      "Bash(git commit *)"
     ],
     "additionalDirectories": [
       "/Users/wanbarry/3dchat/agent-api"
