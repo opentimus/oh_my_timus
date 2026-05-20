@@ -11,7 +11,15 @@
       "Bash(pkill -f \"uvicorn app.main:app\")",
       "Bash(curl -s -X POST http://localhost:8000/agent/chat/sse -H 'Content-Type: application/json' -d '{\"query\": \"给我讲个笑话\"}')",
       "Bash(git add *)",
-      "Bash(git commit -m ' *)"
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(git remote *)",
+      "Bash(git pull *)",
+      "Bash(git stash *)",
+      "Bash(mv /Users/wanbarry/3dchat/agent-api/* /Users/wanbarry/3dchat/ && mv /Users/wanbarry/3dchat/agent-api/.env.example /Users/wanbarry/3dchat/ && mv /Users/wanbarry/3dchat/agent-api/.gitignore /Users/wanbarry/3dchat/ && rmdir /Users/wanbarry/3dchat/agent-api)"
+    ],
+    "additionalDirectories": [
+      "/Users/wanbarry/3dchat/agent-api"
     ]
   }
 }
