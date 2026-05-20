@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cp .env.example .env)",
+      "Bash(pip install *)",
+      "Bash(python3 -m pip install -e . -q)",
+      "Bash(python3 -m pip install fastapi uvicorn langchain langchain-openai langchain-community pydantic pydantic-settings python-dotenv httpx -q)",
+      "Bash(uvicorn app.main:app --host 0.0.0.0 --port 8000)",
+      "Bash(python3 -m uvicorn app.main:app --host 0.0.0.0 --port 8000)",
+      "Bash(curl -s -X POST http://localhost:8000/agent/chat -H 'Content-Type: application/json' -d '{\"query\": \"给我讲个笑话\"}')",
+      "Bash(pkill -f \"uvicorn app.main:app\")",
+      "Bash(curl -s -X POST http://localhost:8000/agent/chat/sse -H 'Content-Type: application/json' -d '{\"query\": \"给我讲个笑话\"}')",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)"
+    ]
+  }
+}
