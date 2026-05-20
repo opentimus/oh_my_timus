@@ -18,7 +18,7 @@ WORKDIR /app
 
 # Install dependencies
 COPY pyproject.toml README.md ./
-RUN pip install --no-cache-dir .
+RUN pip install --no-cache-dir -i https://pypi.tuna.tsinghua.edu.cn/simple .
 
 # Copy application code
 COPY app/ ./app/
