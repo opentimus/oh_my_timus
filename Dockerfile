@@ -16,13 +16,12 @@ FROM python:3.11-slim
 
 WORKDIR /app
 
-# Install dependencies
+# Copy project files
 COPY pyproject.toml README.md ./
-RUN pip install --no-cache-dir -i https://pypi.tuna.tsinghua.edu.cn/simple .
-
-# Copy application code
 COPY app/ ./app/
-COPY docs/ ./docs/
+
+# Install dependencies
+RUN pip install --no-cache-dir -i https://pypi.tuna.tsinghua.edu.cn/simple .
 
 # Expose port
 EXPOSE 8000
