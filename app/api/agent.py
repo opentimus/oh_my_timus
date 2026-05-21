@@ -40,10 +40,10 @@ async def chat_sse(request: AgentRequest):
         agent = get_agent_service()
         try:
             async for chunk in agent.stream(request.query, request.session_id):
-                yield f"data: {json.dumps({'content': chunk})}\n"
-            yield "data: [DONE]\n"
+                yield f"data: {json.dumps({'content': chunk})}\n\n"
+            yield "data: [DONE]\n\n"
         except Exception as e:
-            yield f"data: {json.dumps({'error': str(e)})}\n"
+            yield f"data: {json.dumps({'error': str(e)})}\n\n"
 
     return StreamingResponse(
         generate(),
