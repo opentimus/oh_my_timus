@@ -1,3 +1,20 @@
+# Core Highlights
+
+## "Claude Code" Voice-to-Agent Experience
+
+No more dragging and dropping nodes or writing complex YAML. Just speak your requirements in natural language as if you were talking to Claude (e.g., "I want an agent that can check the weather, calculate shipping costs, and send emails"), and the system instantly generates a working agent.
+
+## Native LangChain Integration
+
+Deeply customized based on LangChain, inheriting its rich toolchain and memory management capabilities, while providing a lighter-weight and more open agent orchestration approach than Dify.
+
+# Core Features
+
+- **More Flexible** – No restrictions on workflow structure; supports arbitrarily complex loops and conditional jumps.
+
+- **More Conversational** – All agents can be debugged and iterated in real time within the chat, without switching back to the backend editor.
+
+- **More Open-Source Friendly** – Fully compatible with the LangChain ecosystem, making self-hosting and secondary development easy.
 # Agent API
 
 FastAPI application integrated with LangChain for building AI agents.
